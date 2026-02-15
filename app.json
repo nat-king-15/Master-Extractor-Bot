@@ -78,7 +78,20 @@
             "description": "Channel ID for extractors"
         },
         "CHANNEL_ID2": {
-            "description": "Channel ID 2 for extractors"
+            "description": "Channel ID 2 for extractors",
+            "required": false
+        },
+        "BOT_TEXT": {
+            "description": "Custom text for the bot",
+            "value": "Master Extractor"
+        },
+        "BOT_USERNAME": {
+            "description": "Username of your bot (without @)",
+            "value": "MasterExtractorBot"
+        },
+        "HOST": {
+            "description": "Public URL of the app (or API host)",
+            "value": "https://api.masterapi.tech"
         }
     },
     "addons": [],
