@@ -1,0 +1,86 @@
+{
+    "name": "Master-Extractor",
+    "description": "Master Extractor Bot for Telegram, built with Pyrogram.",
+    "keywords": [
+        "pyrogram",
+        "docker",
+        "telegram-bot"
+    ],
+    "stack": "container",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "standard-2x"
+        }
+    },
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Telegram Bot Token from @BotFather",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Telegram API ID from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Telegram API Hash from my.telegram.org",
+            "required": true
+        },
+        "ADMIN_ID": {
+            "description": "Admin user IDs (comma separated)",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Bot owner Telegram user ID",
+            "required": true
+        },
+        "DB_URL": {
+            "description": "MongoDB connection URL",
+            "required": true
+        },
+        "DB_NAME": {
+            "description": "MongoDB database name",
+            "value": "nattu"
+        },
+        "TXT_LOG": {
+            "description": "Text log channel ID",
+            "required": true
+        },
+        "AUTH_LOG": {
+            "description": "Auth log channel ID",
+            "required": true
+        },
+        "HIT_LOG": {
+            "description": "Hit log channel ID",
+            "required": true
+        },
+        "DRM_DUMP": {
+            "description": "DRM dump channel ID",
+            "required": true
+        },
+        "CHANNEL": {
+            "description": "Main channel ID",
+            "required": true
+        },
+        "CH_URL": {
+            "description": "Channel invite link"
+        },
+        "OWNER": {
+            "description": "Owner Telegram profile link"
+        },
+        "THUMB_URL": {
+            "description": "Thumbnail image URL"
+        },
+        "PREMIUM_LOGS": {
+            "description": "Premium logs channel ID"
+        },
+        "CHANNEL_ID": {
+            "description": "Channel ID for extractors"
+        },
+        "CHANNEL_ID2": {
+            "description": "Channel ID 2 for extractors"
+        }
+    },
+    "addons": [],
+    "buildpacks": []
+}

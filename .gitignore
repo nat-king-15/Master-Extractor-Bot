@@ -1,0 +1,50 @@
+# ─── Python ──────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ─── Virtual environments ────────────────
+venv/
+wsl_venv/
+.venv/
+env/
+
+# ─── Temp / Downloads ────────────────────
+tmp_downloads/
+*.mp4
+*.mkv
+*.webm
+*.m4a
+*.jpg
+!thumb.jpg
+*.pdf
+*.session
+*.session-journal
+
+# ─── OS files ────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── IDE ──────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ─── Test files ──────────────────────────
+test_download.py
+
+# ─── Txt data files (contain signed URLs) ─
+*.txt
+!requirements.txt
+!run cmd.txt
+
+# ─── Fix scripts not needed in deploy ─────
+_fix_modules.py
+_fix_modules_package.py
+rename_so.sh
